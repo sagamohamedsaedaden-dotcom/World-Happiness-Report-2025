@@ -72,7 +72,7 @@ Check out the project [here](WHR2025.ipynb)
 
 ## Results
 
-![Happiness Distribution by Population Group](images\Happiness_Distribution_by_Population_Group.png)
+![Happiness Distribution by Population Group](images/Happiness_Distribution_by_Population_Group.png)
 
 ## Insight:
 
