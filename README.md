@@ -14,6 +14,7 @@ This project uses the following data sources:
 - **Population Data**  
   World Bank – Total Population (SP.POP.TOTL)  
   [Download CSV](https://data.worldbank.org/indicator/SP.POP.TOTL)
+  - Note: This dataset was used only once in the analysis to compare happiness levels between countries with high and low population.
 
 - **Country Regions**  
   ISO-3166 country codes with a custom region classification for analysis purposes.
@@ -21,19 +22,15 @@ This project uses the following data sources:
 
 ## The questions
 
-**Time scope note:**
-
-- **Question 1** is based on **2024 data only**.
-- **Questions 2–8** are based on **2019–2024 data**.
-
 1. Which are the top 10 happiest countries in 2024?
 2. What are the regional differences in average happiness scores?
-3. How strongly does average GDP per capita correlate with average happiness across countries?
-4. What role does social support play in overall happiness rankings over the years?
-5. What is the overall trend in the global average happiness score from 2019 to 2024?
-6. How did happiness trends differ between the happiest and least happy Middle Eastern countries (2019–2024)?
-7. How does healthy life expectancy influence happiness across developing regions?
-8. How does perceived corruption vary across world regions, reflecting government satisfaction levels?
+3. How do happiness levels differ between high- and low-density countries in 2024?
+4. How strongly does average GDP per capita correlate with average happiness across countries?
+5. What role does social support play in overall happiness rankings over the years?
+6. What is the overall trend in the global average happiness score from 2019 to 2024?
+7. How did happiness trends differ between the happiest and least happy Middle Eastern countries (2019–2024)?
+8. How does healthy life expectancy influence happiness across developing regions?
+9. How does perceived corruption vary across world regions, reflecting government satisfaction levels?
 
 ## Python Libraries Used :
 
@@ -71,7 +68,21 @@ Check out the project [here](WHR2025.ipynb)
 - Europe and North America follow closely with strong scores , reflecting high social support and economic stability.
 - Africa ranks lowest , highlighting significant gaps in well-being compared to other regions.
 
-### 3. How strongly does average GDP per capita correlate with average happiness across countries?
+### 3. How do happiness levels differ between high- and low-density countries in 2024?
+
+## Results
+
+![Happiness Distribution by Population Group](images\Happiness_Distribution_by_Population_Group.png)
+
+## Insight:
+
+- Low-population countries show slightly higher median happiness scores compared to high-population countries.
+
+- Happiness levels vary more in high-population countries, meaning some of these countries report very low happiness scores compared to others.
+
+- Population size does not appear to be a direct determinant of happiness, as happiness levels overlap significantly between groups, indicating that other factors (such as income, social support, and health) play a stronger role.
+
+### 4. How strongly does average GDP per capita correlate with average happiness across countries?
 
 ## Results
 
@@ -85,7 +96,7 @@ Check out the project [here](WHR2025.ipynb)
 
 - African countries are mostly concentrated in the lower-left area, reflecting lower GDP per capita and lower happiness scores, while Asia and South America show wider variability at mid-income levels.
 
-### 4. What role does social support play in overall happiness rankings over the years?
+### 5. What role does social support play in overall happiness rankings over the years?
 
 ## Results
 
@@ -99,7 +110,7 @@ Check out the project [here](WHR2025.ipynb)
 
 - Countries with medium levels of social support show greater variation in happiness scores, while those with high social support display more consistent and higher happiness levels, indicating a stabilizing effect of strong social support systems.
 
-### 5. What is the overall trend in the global average happiness score from 2019 to 2024?
+### 6. What is the overall trend in the global average happiness score from 2019 to 2024?
 
 ## Results
 
@@ -113,7 +124,7 @@ Check out the project [here](WHR2025.ipynb)
 
 - 2024 records the highest average happiness score in the period, marking a strong rebound compared to the slight dip in the previous two years.
 
-### 6. How did happiness trends differ between the happiest and least happy Middle Eastern countries (2019–2024)?
+### 7. How did happiness trends differ between the happiest and least happy Middle Eastern countries (2019–2024)?
 
 ## Results
 
@@ -127,7 +138,7 @@ Check out the project [here](WHR2025.ipynb)
 
 - In contrast, Afghanistan and Lebanon experience severe declines around 2021–2022, with only partial recovery afterward, highlighting the long-term impact of political and economic instability on well-being.
 
-### 7. How does healthy life expectancy influence happiness across developing regions?
+### 8. How does healthy life expectancy influence happiness across developing regions?
 
 ## Results
 
@@ -141,7 +152,7 @@ Check out the project [here](WHR2025.ipynb)
 
 - Asian and South American countries generally show higher happiness scores at similar or higher levels of healthy life expectancy, with South America standing out for relatively high happiness despite moderate health levels.
 
-### 8. How does perceived corruption vary across world regions, reflecting government satisfaction levels ?
+### 9. How does perceived corruption vary across world regions, reflecting government satisfaction levels ?
 
 ## Results
 
